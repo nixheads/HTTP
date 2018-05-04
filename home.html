@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<style>
+body
+{
+	background-color: #000000;
+	padding: 1%;
+	color: #ccc;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	}
+a
+{
+	color: #00FF00;
+	text-decoration: underline;
+}
+a:hover
+{
+	color: #FF0000;
+	text-decoration: underline;
+}
+.console
+{
+	font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+	color: #00FF00;
+}
+input[type="button"]
+{
+	cursor: pointer;
+}
+.pi {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: #00FF00;
+  }
+.cow {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	color: #00FF00;
+  }
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+.header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #00FF00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #333;
+  color: #00FF00;
+}
+
+#navbar a.active {
+  background-color: #00FF00;
+  color: black;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+<title>NixHeads</title>
+<meta name="description" content="Nixheads Community" />
+
+<head>
+<!--
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8555112126038542",
+    enable_page_level_ads: true
+  });
+</script>
+-->
+</head>
+<div class="header">
+<img src="banner.png" style="width:500px;height:100px;">
+</div>
+
+<div id="navbar">
+  <a class="active" href="home.html">Home</a>
+  <a href="http://webchat.freenode.net?nick=NixheadsWebUser&channels=%23%23nixheads&prompt=1&uio=Mj10cnVlJjk9dHJ1ZSYxMT0xMjMmMTU9dHJ1ZQc0">IRC</a>
+  <a>|</a>
+  <a href="https://github.com/nixheads">Github</a>
+  <a>|</a>
+  <a href="projects.html">Projects</a>
+  <a>|</a>
+  <a href="https://discord.gg/wGUnSqc">Discord</a>
+  <a>|</a>
+  <a href="index.php">Music</a>
+  <a>|</a>
+  <a href="mailto:dragonkeeper@nixheads.co.uk">Contact</a>
+  <a>|</a>
+  <a href="https://paypal.me/pools/c/847ecfV6JC">Donate</a>
+  <a>|</a>
+
+</div>
+ 
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript" src="functions.js"> </script>
+
+<body bgcolor="black" text="lime" link="lime" alink="lime" vlink="lime">
+<p class="console">
+	<span># </span><span id="caption"></span><span id="cursor">|</span>
+<noscript>nixheads@TheInternet ~/ $ whois nixheads
+<br><br>
+Nixheads is a *nix commu<span class="console1"><br>
+</span>nity based on <a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a> using the <a href="https://freenode.net/">Freenode</a> network.<br><br>
+
+The Nixheads community channel is called ##nixheads and can be accessed via <a href="https://webchat.freenode.net/">a web client</a> or your own installed IRC client.
+<br><br>
+
+The community is slowly growing and always welcoming new members of any skill level. The channel exists to provide support and to be a friendly place to talk to friends.
+<br><br><br>
+
+They welcome you to also join them on their reddit page
+<br>
+and take a look at their github projects; make contributions they are always appreciated.
+<br><br><br>
+
+nixheads@TheInternet ~/ $ </noscript>
+</p>
+</body>
+</html>
